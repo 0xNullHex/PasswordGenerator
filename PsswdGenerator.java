@@ -9,5 +9,6 @@ public class PsswdGenerator {
             String result = value.getGeneratingAlgorithm(length);
             System.out.printf("The password is => %s\n", result);
         }
+        value.SavePassword("test");
     }
 }
