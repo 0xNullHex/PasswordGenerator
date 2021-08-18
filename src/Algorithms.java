@@ -2,7 +2,6 @@ import java.util.Random;
 import java.io.*;
 public class Algorithms {
     int length;
-    String text;
     String fileName="Passwords";
     public String getGeneratingAlgorithm(int length){
         this.length=length;
@@ -28,7 +27,6 @@ public class Algorithms {
         }
     }
     public void setText(String text) throws IOException {
-        this.text=text;
         FileWriter file= new FileWriter(fileName+".txt",true);
         file.append(text).append("\n");
         file.close();
